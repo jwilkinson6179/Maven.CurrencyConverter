@@ -9,4 +9,9 @@ public class Ringgit implements ConvertableCurrency
     public Double convert(CurrencyType currencyType) {
         return currencyType.getRate() / CurrencyType.RINGGIT.getRate();
     }
+
+    public CurrencyType getType()
+    {
+        return CurrencyType.RINGGIT;
+    }
 }

@@ -5,4 +5,6 @@ public interface ConvertableCurrency {
     {
         return Double.MAX_VALUE;
     }
+
+    public CurrencyType getType();
 }

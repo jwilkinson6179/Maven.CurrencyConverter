@@ -9,4 +9,9 @@ public class Yen implements ConvertableCurrency
     public Double convert(CurrencyType currencyType) {
         return currencyType.getRate() / CurrencyType.YEN.getRate();
     }
+
+    public CurrencyType getType()
+    {
+        return CurrencyType.YEN;
+    }
 }

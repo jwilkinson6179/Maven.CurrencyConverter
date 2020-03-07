@@ -9,4 +9,9 @@ public class ChineseYR implements ConvertableCurrency
     public Double convert(CurrencyType currencyType) {
         return currencyType.getRate() / CurrencyType.CHINESE_YR.getRate();
     }
+
+    public CurrencyType getType()
+    {
+        return CurrencyType.CHINESE_YR;
+    }
 }

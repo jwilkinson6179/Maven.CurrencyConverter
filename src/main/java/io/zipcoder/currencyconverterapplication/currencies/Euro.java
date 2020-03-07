@@ -8,4 +8,9 @@ public class Euro implements ConvertableCurrency {
     public Double convert(CurrencyType currencyType) {
         return currencyType.getRate() / CurrencyType.EURO.getRate();
     }
+
+    public CurrencyType getType()
+    {
+        return CurrencyType.EURO;
+    }
 }

@@ -9,4 +9,9 @@ public class Pound implements ConvertableCurrency
     public Double convert(CurrencyType currencyType) {
         return currencyType.getRate() / CurrencyType.POUND.getRate();
     }
+
+    public CurrencyType getType()
+    {
+        return CurrencyType.POUND;
+    }
 }

@@ -9,4 +9,9 @@ public class UniversalCurrency implements ConvertableCurrency
     public Double convert(CurrencyType currencyType) {
         return currencyType.getRate() / CurrencyType.UNIVERSAL_CURRENCY.getRate();
     }
+
+    public CurrencyType getType()
+    {
+        return CurrencyType.UNIVERSAL_CURRENCY;
+    }
 }

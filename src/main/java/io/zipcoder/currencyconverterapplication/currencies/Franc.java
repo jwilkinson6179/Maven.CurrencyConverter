@@ -8,4 +8,9 @@ public class Franc implements ConvertableCurrency {
     public Double convert(CurrencyType currencyType) {
         return currencyType.getRate() / CurrencyType.FRANC.getRate();
     }
+
+    public CurrencyType getType()
+    {
+        return CurrencyType.FRANC;
+    }
 }

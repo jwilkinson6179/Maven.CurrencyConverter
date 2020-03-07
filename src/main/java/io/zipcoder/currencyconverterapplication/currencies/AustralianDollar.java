@@ -9,4 +9,9 @@ public class AustralianDollar implements ConvertableCurrency
     public Double convert(CurrencyType currencyType) {
         return currencyType.getRate() / CurrencyType.AUSTRALIAN_DOLLAR.getRate();
     }
+
+    public CurrencyType getType()
+    {
+        return CurrencyType.AUSTRALIAN_DOLLAR;
+    }
 }
